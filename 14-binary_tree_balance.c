@@ -14,7 +14,7 @@ int binary_tree_balance(const binary_tree_t *tree)
 	int rheight;
 
 	if (tree == NULL)
-		return (-1);
+		return (0);
 
 	lheight = tree_height(tree->left);
 	rheight = tree_height(tree->right);
@@ -24,7 +24,10 @@ int binary_tree_balance(const binary_tree_t *tree)
 
 
 /**
- * DON'T FORGET THIS PART
+ * tree_height - calculates height of a substring
+ * @tree: pointer to the root node of the tree
+ *
+ * Return: height of the tree
  */
 
 int tree_height(const binary_tree_t *tree)
